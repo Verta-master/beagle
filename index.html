@@ -15,7 +15,7 @@
       <button class="menu__btn"><span class="visually-hidden">Меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link">О Бигль</a>
+          <a href="#" class="menu__link menu__link--active">О Бигль</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Велосипеды</a>
@@ -40,8 +40,15 @@
         <p>auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus</p>
         <a href="#" class="btn promo__btn">Купить сейчас!</a>
       </div>
-      <div class="slider">
-        
+      <div class="slider-pro promo__slider" id="slider">
+        <ul class="sp-slides">
+          <li class="sp-slide">
+            <img class="sp-image" src="img/img-1.jpg" width="632" height="359">
+          </li>
+          <li class="sp-slide">
+            <img class="sp-image" src="img/img-2.jpg" width="554" height="302">
+          </li>
+        </ul>
       </div>
     </section>
     
@@ -279,6 +286,24 @@
     </div>
   </footer>
   
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
+  
+<!-- Slider -->
+  <script>
+    jQuery(document).ready(function ($) {
+      $('#slider').sliderPro({
+        width: 620,
+//        height: 450,
+        arrows: true,
+        fadeArrows: false,
+        fullScreen: true,
+        buttons: false,
+        autoplay: false,
+        aspectRatio: 1.76,
+      });
+    });
+  </script>
 </body>
 </html>

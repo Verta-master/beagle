@@ -1,0 +1,30 @@
+.menu__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu__link {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: @brown;
+  line-height: 60px;
+  
+  &:hover,
+  &:active,
+  &--active {
+    border-top: 3px solid @brown;
+    border-bottom: 3px solid @brown;
+    transition: ease-out 0.2s;
+  }
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__item {
+  margin-left: 37px;
+}
