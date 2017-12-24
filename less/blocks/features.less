@@ -1,14 +1,23 @@
 .features {
+  padding-top: 15px;
+  padding-bottom: 105px;
+  
+  h2 {
+    margin-bottom: 25px;
+  }
+  
   p {
     max-width: 750px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
   }
 }
 
 .features__img {
   width: 100%;
+  margin-top: 85px;
   position: relative;
   
   img {
@@ -46,92 +55,111 @@
   }
 
   &--seat {
-    top: 10%;
+    top: 13%;
     left: 10%;
     
     .feature__circle {
       top: 0;
-      left: 180%;
+      left: 179%;
     }
     
     &::after {
-      top: 25px;
+      top: 13px;
       left: 40%;
     }
   }
   
   &--resin {
-    top: 40%;
+    top: 42%;
     left: 0;
+    
+    p {
+      max-width: 150px;
+    }
     
     .feature__circle {
       top: 0;
-      left: 160%;
+      left: 270%;
     }
     
     &::after {
-      top: 25px;
-      left: 40%;
+      top: 15px;
+      left: 55%;
     }
   }
   
   &--chain {
-    top: 70%;
-    left: 5%;
+    top: 65%;
+    left: 1%;
+    
+    p {
+      max-width: 200px;
+    }
     
     .feature__circle {
       top: 0;
-      left: 200%;
+      left: 230%;
     }
     
     &::after {
-      top: 25px;
+      top: 15px;
       left: 50%;
     }
   }
   
   &--rule {
-    top: 0;
+    top: 4%;
     right: 0;
+    
+    p {
+      max-width: 220px;
+    }
     
     .feature__circle {
       top: 0;
-      left: -170%;
+      left: -155%;
     }
     
     &::after {
-      top: 25px;
+      top: 15px;
       right: 100%;
     }
   }
   
   &--frame {
-    top: 30%;
+    top: 26%;
     right: 0;
     
     .feature__circle {
-      top: 0;
-      left: -150%;
+      top: 4%;
+      left: -153%;
     }
     
     &::after {
-      top: 25px;
+      top: 20px;
       right: 100%;
     }
   }
   
   &--system {
-    top: 70%;
+    top: 72%;
     right: 0;
     
+    p {
+      max-width: 200px;
+      background-color: #fff;
+      position: relative;
+      z-index: 5;
+    }
+    
     .feature__circle {
-      top: -100%;
-      left: -100%;
+      top: -145%;
+      left: -160%;
     }
     
     &::after {
-      bottom: 25px;
-      right: 100%;
+      bottom: 90px;
+      right: 70%;
       width: 371px;
       height: 215px;
       background-image: url(../img/line-2.png);
@@ -139,17 +167,21 @@
   }
   
   &--step {
-    bottom: 0;
-    right: 20%;
+    bottom: -75px;
+    right: 12%;
+    
+    p {
+      max-width: 250px;
+    }
     
     .feature__circle {
-      top: -50%;
-      left: -100%;
+      top: -295%;
+      left: -172%;
     }
     
     &::after {
-      bottom: 25px;
-      right: 100%;
+      bottom: 50px;
+      right: 107%;
       width: 371px;
       height: 215px;
       background-image: url(../img/line-2.png);
@@ -163,6 +195,7 @@
   height: 30px;
   border-radius: 50%;
   background-color: rgba(184, 101, 29, 0.17);
+  z-index: 5;
   
   &::after {
     content: "";

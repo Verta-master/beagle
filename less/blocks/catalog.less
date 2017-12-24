@@ -7,7 +7,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 200px;
+    top: 265px;
     left: 0;
     z-index: -1;
     width: ~"calc(50% - 505px)";
@@ -20,7 +20,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 200px;
+    top: 265px;
     left: 0;
     z-index: -1;
     width: 119px;
@@ -38,7 +38,7 @@
 
 .catalog__list {
   width: 1140px;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 100px;
   
   h3 {
@@ -87,7 +87,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   visibility: hidden;
   
   p {
@@ -209,5 +209,10 @@
   
   &::after {
     bottom: -1px;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
   }
 }

@@ -1,6 +1,10 @@
 .album {
   position: relative;
   
+  h2 {
+    margin-bottom: 25px;
+  }
+  
   p {
     max-width: 750px;
     text-align: center;
@@ -11,7 +15,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 200px;
+    top: 185px;
     right: 0;
     z-index: -1;
     width: ~"calc(50% + 505px)";
@@ -45,6 +49,7 @@
   img {
     display: block;
     width: 160px;
+    height: 116px;
     border-left: 30px solid #fff;
     border-right: 30px solid #fff;
   }
@@ -52,7 +57,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 0;
     z-index: -1;
     width: 100%;
@@ -65,15 +70,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 746px;
-  height: 67px;
+  width: 750px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   font-size: 18px;
   font-weight: 600;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
   color: @brown;
   text-transform: uppercase;
   border-radius: 25px;
@@ -94,11 +99,12 @@
   justify-content: flex-end;
   align-items: flex-start;
   align-content: flex-start;
-  margin-bottom: 180px;
+  margin-bottom: 190px;
+  padding-top: 5px;
 }
 
 .album__item {
-  margin-left: 25px;
+  margin-left: 30px;
   box-shadow: 0 0 49px 0 rgba(34, 30, 35, 0.4);
   position: relative;
   overflow: hidden;
@@ -108,7 +114,7 @@
   }
   
   &:first-child {
-    margin-top: 70px;
+    margin-top: 80px;
   }
   
   &:nth-child(2) {
@@ -129,11 +135,13 @@
   
   &:nth-child(5) {
     align-self: flex-end;
+    margin-left: 40px;
   }
   
   &:nth-child(6) {
     align-self: flex-end;
-    margin-top: -55px;
+    margin-top: -60px;
+    margin-left: 37px;
   }
 }
 
