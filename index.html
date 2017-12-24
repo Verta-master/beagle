@@ -142,11 +142,11 @@
     </section>
     
     <section class="feedback">
-      <div class="wrapper">
+      <div class="feedback__wrap">
         <h2>Остались вопросы?</h2>
         <p>Вы можете написать нам и наш менеджер свяжемся с вами в ближайшее время!<br>Будем рады вашей заявке</p>
         <form action="#" method="post" class="feedback__form">
-          <div class="feedback__wrap">
+          <div class="feedback__field">
             <input type="email" name="email" class="feedback__input" placeholder="Введите свой e-mail">
             <button type="submit" class="feedback__btn">Отправить</button>
           </div>
@@ -159,13 +159,34 @@
       <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet</p>
       <div class="features__img">
         <img src="img/img-1.jpg" alt="Характеристики" width="917" height="550">
-        <p class="features__item features__item--seat"><span>Сидение</span>This is Photoshop's version  of Lorem Ipsum. Proin gravida nib</p>
-        <p class="features__item features__item--resin"><span>Резина</span>This is Photoshop's version  of Lorem</p>
-        <p class="features__item features__item--chain"><span>Цепь</span>Цепь закрытого типа, на сепараторах</p>
-        <p class="features__item features__item--rule"><span>Руль</span>Изготовлен с высокопрочной стали - zx 250 bt</p>
-        <p class="features__item features__item--frame"><span>Рама</span>Изготовлен с высокопрочной стали - zx 250 bt</p>
-        <p class="features__item features__item--system"><span>Тормозная система</span>Новые технологии покрытия тормозных колодок - brake super T</p>
-        <p class="features__item features__item--step"><span>Ступица</span>Brte one x, технология omnitech</p>
+        <div class="features__item features__item--seat">
+          <p><span>Сидение</span>This is Photoshop's version  of Lorem Ipsum. Proin gravida nib</p>
+          <span class="feature__circle"></span>
+        </div>
+        <div class="features__item features__item--resin">
+          <p><span>Резина</span>This is Photoshop's version  of Lorem</p>
+          <span class="feature__circle"></span>
+        </div>
+        <div class="features__item features__item--chain">
+          <p><span>Цепь</span>Цепь закрытого типа, на сепараторах</p>
+          <span class="feature__circle"></span>
+        </div>
+        <div class="features__item features__item--rule">
+          <p><span>Руль</span>Изготовлен с высокопрочной стали - zx 250 bt</p>
+          <span class="feature__circle"></span>
+        </div>
+        <div class="features__item features__item--frame">
+          <p><span>Рама</span>Изготовлена с высокопрочной стали - zx 250 bt</p>
+          <span class="feature__circle"></span>
+        </div>
+        <div class="features__item features__item--system">
+          <p><span>Тормозная система</span>Новые технологии покрытия тормозных колодок - brake super T</p>
+          <span class="feature__circle"></span>
+        </div>
+        <div class="features__item features__item--step">
+          <p><span>Ступица</span>Brte one x, технология omnitech</p>
+          <span class="feature__circle"></span>
+        </div>
       </div>
     </section>
     
@@ -177,37 +198,44 @@
           <li class="album__item">
             <a href="#">
               <img src="img/photo-1.jpg" alt="Фотоальбом" width="416" height="280">
+              <div class="album__overlay"></div>
             </a>
           </li>
           <li class="album__item">
             <a href="#">
               <img src="img/photo-2.jpg" alt="Фотоальбом" width="485" height="369">
+              <div class="album__overlay"></div>
             </a>
           </li>
           <li class="album__item">
             <a href="#">
               <img src="img/photo-3.jpg" alt="Фотоальбом" width="415" height="260">
+              <div class="album__overlay"></div>
             </a>
           </li>
           <li class="album__item">
             <a href="#">
               <img src="img/photo-4.jpg" alt="Фотоальбом" width="474" height="319">
+              <div class="album__overlay"></div>
             </a>
           </li>
           <li class="album__item">
             <a href="#">
               <img src="img/photo-5.jpg" alt="Фотоальбом" width="496" height="334">
+              <div class="album__overlay"></div>
             </a>
           </li>
           <li class="album__item">
             <a href="#">
               <img src="img/photo-6.jpg" alt="Фотоальбом" width="347" height="456">
+              <div class="album__overlay"></div>
             </a>
           </li>
         </ul>
       </div>
-      <span>Beagle</span>
-      <img src="img/dog.png" alt="Beagle" class="album__divider" width="100" height="116">
+      <figure class="album__divider">
+        <img src="img/dog.png" alt="Beagle" width="100" height="116">
+      </figure>
       <a href="#" class="album__btn">Перейти в каталог</a>
     </section>
     

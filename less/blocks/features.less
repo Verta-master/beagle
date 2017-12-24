@@ -1,0 +1,178 @@
+.features {
+  p {
+    max-width: 750px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.features__img {
+  width: 100%;
+  position: relative;
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.features__item {
+  position: absolute;
+  
+  p {
+    max-width: 230px;
+    text-align: left;
+    color: #7e7a7f;
+    line-height: 30px;
+    
+    span {
+      display: block;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      color: #3c353e;
+    }
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 325px;
+    height: 2px;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+  }
+
+  &--seat {
+    top: 10%;
+    left: 10%;
+    
+    .feature__circle {
+      top: 0;
+      left: 180%;
+    }
+    
+    &::after {
+      top: 25px;
+      left: 40%;
+    }
+  }
+  
+  &--resin {
+    top: 40%;
+    left: 0;
+    
+    .feature__circle {
+      top: 0;
+      left: 160%;
+    }
+    
+    &::after {
+      top: 25px;
+      left: 40%;
+    }
+  }
+  
+  &--chain {
+    top: 70%;
+    left: 5%;
+    
+    .feature__circle {
+      top: 0;
+      left: 200%;
+    }
+    
+    &::after {
+      top: 25px;
+      left: 50%;
+    }
+  }
+  
+  &--rule {
+    top: 0;
+    right: 0;
+    
+    .feature__circle {
+      top: 0;
+      left: -170%;
+    }
+    
+    &::after {
+      top: 25px;
+      right: 100%;
+    }
+  }
+  
+  &--frame {
+    top: 30%;
+    right: 0;
+    
+    .feature__circle {
+      top: 0;
+      left: -150%;
+    }
+    
+    &::after {
+      top: 25px;
+      right: 100%;
+    }
+  }
+  
+  &--system {
+    top: 70%;
+    right: 0;
+    
+    .feature__circle {
+      top: -100%;
+      left: -100%;
+    }
+    
+    &::after {
+      bottom: 25px;
+      right: 100%;
+      width: 371px;
+      height: 215px;
+      background-image: url(../img/line-2.png);
+    }
+  }
+  
+  &--step {
+    bottom: 0;
+    right: 20%;
+    
+    .feature__circle {
+      top: -50%;
+      left: -100%;
+    }
+    
+    &::after {
+      bottom: 25px;
+      right: 100%;
+      width: 371px;
+      height: 215px;
+      background-image: url(../img/line-2.png);
+    }
+  }
+}
+
+.feature__circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(184, 101, 29, 0.17);
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(184, 101, 29);
+  }
+}

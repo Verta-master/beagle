@@ -1,0 +1,147 @@
+.album {
+  position: relative;
+  
+  p {
+    max-width: 750px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    right: 0;
+    z-index: -1;
+    width: ~"calc(50% + 505px)";
+    height: 705px;
+    border-radius: 25px 0 0 25px;
+    background-image: linear-gradient(to right, rgb(177,96,29) 0%, rgb(219,131,27) 100%);
+  }
+  
+  &::after {
+    content: "Beagle";
+    position: absolute;
+    top: 160px;
+    right: 0;
+    z-index: -1;
+    font-size: 126px;
+    letter-spacing: 40px;
+    color: rgba(228, 149, 62, 0.439);
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    transform-origin: right;
+    transform: rotate(90deg) translate(100%, 80px);
+  }
+}
+
+.album__divider {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  
+  img {
+    display: block;
+    width: 160px;
+    border-left: 30px solid #fff;
+    border-right: 30px solid #fff;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(232, 232, 232);
+  }
+}
+
+.album__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 746px;
+  height: 67px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  color: @brown;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 2px solid @brown;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    background-color: @brown;
+    color: #fff;
+    transition: ease-out 0.3s;
+  }
+}
+
+.album__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-bottom: 180px;
+}
+
+.album__item {
+  margin-left: 25px;
+  box-shadow: 0 0 49px 0 rgba(34, 30, 35, 0.4);
+  position: relative;
+  overflow: hidden;
+  
+  img {
+    display: block;
+  }
+  
+  &:first-child {
+    margin-top: 70px;
+  }
+  
+  &:nth-child(2) {
+    box-shadow: 0 20px 49px 0 rgba(34, 30, 35, 0.4);
+    
+    .album__overlay {
+      opacity: 0;
+    }
+  }
+  
+  &:nth-child(3) {
+    margin-top: 20px;
+  }
+  
+  &:nth-child(4) {
+    align-self: flex-end;
+  }
+  
+  &:nth-child(5) {
+    align-self: flex-end;
+  }
+  
+  &:nth-child(6) {
+    align-self: flex-end;
+    margin-top: -55px;
+  }
+}
+
+.album__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: @brown;
+  opacity: 0.31;
+}
