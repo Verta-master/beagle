@@ -196,40 +196,70 @@
         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet</p>
         <ul class="album__list">
           <li class="album__item">
-            <a href="#">
+            <a href="img/photo-1.jpg" data-fancybox="group-1">
               <img src="img/photo-1.jpg" alt="Фотоальбом" width="416" height="280">
               <div class="album__overlay"></div>
             </a>
+            <div class="album__hidden" id="group-1">
+              <img src="img/photo-2.jpg" data-fancybox="group-1" alt="Фотоальбом" width="485" height="369">
+              <img src="img/photo-1.jpg" data-fancybox="group-1" alt="Фотоальбом" width="416" height="280">
+              <img src="img/photo-3.jpg" data-fancybox="group-1" alt="Фотоальбом" width="415" height="260">
+            </div>
           </li>
           <li class="album__item">
-            <a href="#">
+            <a href="img/photo-2.jpg" data-fancybox="group-2">
               <img src="img/photo-2.jpg" alt="Фотоальбом" width="485" height="369">
               <div class="album__overlay"></div>
             </a>
+            <div class="album__hidden" id="group-2">
+              <img src="img/photo-1.jpg" data-fancybox="group-2" alt="Фотоальбом" width="416" height="280">
+              <img src="img/photo-2.jpg" data-fancybox="group-2" alt="Фотоальбом" width="485" height="369">
+              <img src="img/photo-3.jpg" data-fancybox="group-2" alt="Фотоальбом" width="415" height="260">
+            </div>
           </li>
           <li class="album__item">
-            <a href="#">
+            <a href="img/photo-3.jpg" data-fancybox="group-3">
               <img src="img/photo-3.jpg" alt="Фотоальбом" width="415" height="260">
               <div class="album__overlay"></div>
             </a>
+            <div class="album__hidden" id="group-3">
+              <img src="img/photo-1.jpg" data-fancybox="group-3" alt="Фотоальбом" width="416" height="280">
+              <img src="img/photo-2.jpg" data-fancybox="group-3" alt="Фотоальбом" width="485" height="369">
+              <img src="img/photo-3.jpg" data-fancybox="group-3" alt="Фотоальбом" width="415" height="260">
+            </div>
           </li>
           <li class="album__item">
-            <a href="#">
+            <a href="img/photo-4.jpg" data-fancybox="group-4">
               <img src="img/photo-4.jpg" alt="Фотоальбом" width="474" height="319">
               <div class="album__overlay"></div>
             </a>
+            <div class="album__hidden" id="group-4">
+              <img src="img/photo-1.jpg" data-fancybox="group-4" alt="Фотоальбом" width="416" height="280">
+              <img src="img/photo-2.jpg" data-fancybox="group-4" alt="Фотоальбом" width="485" height="369">
+              <img src="img/photo-3.jpg" data-fancybox="group-4" alt="Фотоальбом" width="415" height="260">
+            </div>
           </li>
           <li class="album__item">
-            <a href="#">
+            <a href="img/photo-5.jpg" data-fancybox="group-5">
               <img src="img/photo-5.jpg" alt="Фотоальбом" width="496" height="334">
               <div class="album__overlay"></div>
             </a>
+            <div class="album__hidden" id="group-5">
+              <img src="img/photo-1.jpg" data-fancybox="group-5" alt="Фотоальбом" width="416" height="280">
+              <img src="img/photo-2.jpg" data-fancybox="group-5" alt="Фотоальбом" width="485" height="369">
+              <img src="img/photo-3.jpg" data-fancybox="group-5" alt="Фотоальбом" width="415" height="260">
+            </div>
           </li>
           <li class="album__item">
-            <a href="#">
+            <a href="img/photo-6.jpg" data-fancybox="group-6">
               <img src="img/photo-6.jpg" alt="Фотоальбом" width="347" height="456">
               <div class="album__overlay"></div>
             </a>
+            <div class="album__hidden" id="group-6">
+              <img src="img/photo-1.jpg" data-fancybox="group-6" alt="Фотоальбом" width="416" height="280">
+              <img src="img/photo-2.jpg" data-fancybox="group-6" alt="Фотоальбом" width="485" height="369">
+              <img src="img/photo-3.jpg" data-fancybox="group-6" alt="Фотоальбом" width="415" height="260">
+            </div>
           </li>
         </ul>
       </div>
@@ -322,6 +352,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/jquery.sliderPro.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   
 <!-- Slider -->
   <script>
@@ -331,11 +362,12 @@
 //        height: 450,
         arrows: true,
         fadeArrows: false,
+        fade: true,
         fullScreen: true,
         buttons: false,
         autoplay: false,
         aspectRatio: 1.76,
-        slideAnimationDuration: 1500,
+        slideAnimationDuration: 2500,
       });
     });
   </script>
