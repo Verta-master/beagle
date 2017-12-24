@@ -1,0 +1,39 @@
+.bottom-menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.bottom-menu__item {
+  padding-left: 55px;
+  padding-right: 55px;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 1px;
+    height: 35px;
+    background-color: rgb(233, 233, 233);
+  }
+  
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.bottom-menu__link {
+  color: #3e3640;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @brown;
+  }
+}
