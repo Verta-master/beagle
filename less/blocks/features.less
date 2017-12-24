@@ -24,6 +24,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transform: translateX(-60px);
   }
 }
 
@@ -44,66 +45,27 @@
       color: #3c353e;
     }
   }
-  
-  &::after {
-    content: "";
-    position: absolute;
-    width: 325px;
-    height: 2px;
-    background-image: url(../img/line.png);
-    background-repeat: no-repeat;
-  }
 
   &--seat {
-    top: 13%;
+    top: 12%;
     left: 10%;
-    
-    .feature__circle {
-      top: 0;
-      left: 179%;
-    }
-    
-    &::after {
-      top: 13px;
-      left: 40%;
-    }
   }
   
   &--resin {
-    top: 42%;
+    top: 40%;
     left: 0;
     
     p {
       max-width: 150px;
     }
-    
-    .feature__circle {
-      top: 0;
-      left: 270%;
-    }
-    
-    &::after {
-      top: 15px;
-      left: 55%;
-    }
   }
   
   &--chain {
-    top: 65%;
+    top: 62%;
     left: 1%;
     
     p {
-      max-width: 200px;
-    }
-    
-    .feature__circle {
-      top: 0;
-      left: 230%;
-    }
-    
-    &::after {
-      top: 15px;
-      left: 50%;
+      max-width: 180px;
     }
   }
   
@@ -114,35 +76,15 @@
     p {
       max-width: 220px;
     }
-    
-    .feature__circle {
-      top: 0;
-      left: -155%;
-    }
-    
-    &::after {
-      top: 15px;
-      right: 100%;
-    }
   }
   
   &--frame {
-    top: 26%;
+    top: 25%;
     right: 0;
-    
-    .feature__circle {
-      top: 4%;
-      left: -153%;
-    }
-    
-    &::after {
-      top: 20px;
-      right: 100%;
-    }
   }
   
   &--system {
-    top: 72%;
+    top: 70%;
     right: 0;
     
     p {
@@ -151,61 +93,14 @@
       position: relative;
       z-index: 5;
     }
-    
-    .feature__circle {
-      top: -145%;
-      left: -160%;
-    }
-    
-    &::after {
-      bottom: 90px;
-      right: 70%;
-      width: 371px;
-      height: 215px;
-      background-image: url(../img/line-2.png);
-    }
   }
   
   &--step {
-    bottom: -75px;
-    right: 12%;
+    bottom: -55px;
+    right: 13%;
     
     p {
       max-width: 250px;
     }
-    
-    .feature__circle {
-      top: -293%;
-      left: -172%;
-    }
-    
-    &::after {
-      bottom: 50px;
-      right: 107%;
-      width: 371px;
-      height: 215px;
-      background-image: url(../img/line-2.png);
-    }
-  }
-}
-
-.feature__circle {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgba(184, 101, 29, 0.17);
-  z-index: 5;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: rgb(184, 101, 29);
   }
 }
