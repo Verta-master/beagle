@@ -1,0 +1,56 @@
+.album-internal {
+  padding-top: 25px;
+  border-top: 1px solid rgb(243, 243, 243);
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: normal;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 31px;
+  }
+  
+  .album__divider {
+    margin-top: 85px;
+  }
+}
+
+.menu__sublist {
+  position: absolute;
+  top: 105px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(243, 243, 243);
+  border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.menu__subitem {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.menu__sublink {
+  display: block;
+  font-size: 18px;
+  color: #59514b;
+  line-height: 58px;
+  border-bottom: 3px solid rgba(255,255,255,0);
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @brown;
+    border-color: @brown;
+    transition: ease-out 0.2s;
+  }
+}
