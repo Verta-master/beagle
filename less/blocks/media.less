@@ -73,6 +73,15 @@
       width: 900px;
     }
   }
+  
+  .about__img,
+  .about__figure {
+    margin: 0;
+  }
+  
+  .about__item {
+    margin-right: 30px;
+  }
 }
 
 //--------------------------------
@@ -226,6 +235,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+  
+  .about__photo {
+    width: 65%;
+  }
+  
+  .about__info {
+    width: 35%;
+  }
 }
 
 //--------------------
@@ -364,6 +381,28 @@
     margin-top: 50px;
     margin-bottom: 100px;
   }
+  
+  .about__info,
+  .about__photo {
+    width: 100%;
+  }
+  
+  .about__photo {
+    margin-bottom: 70px;
+  }
+  
+  .about {
+    display: block;
+  }
+  
+  .about h3 {
+    text-align: center;
+  }
+  
+  .about__price,
+  .about__list {
+    justify-content: center;
+  }
 }
 
 //-----------------------
@@ -448,6 +487,23 @@
     top: 40px;
     left: 0;
   }
+  
+  .menu__sublink {
+    line-height: 1.2;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .menu__sublist {
+    flex-wrap: wrap;
+  }
+  
+  .menu__subitem {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 //--------------------------
@@ -526,5 +582,66 @@
   .catalog::after,
   .catalog::before {
     top: 100px;
+  }
+  
+  .about {
+    margin-top: 40px;
+  }
+  
+  .about__wrap {
+    flex-direction: column;
+  }
+  
+  .about__back {
+    text-align: center;
+  }
+  
+  .about h1 {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 36px;
+  }
+  
+  .about__type {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  
+  .about__color {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    
+    &::after {
+      top: -5px;
+      left: -5px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  .about__price {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+  
+  .about__price p {
+    font-size: 36px;
+  }
+  
+  .about__link {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .album-internal h2 {
+    font-size: 28px;
+  }
+  
+  .album-internal p {
+    font-size: 16px;
   }
 }
