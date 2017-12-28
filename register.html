@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Beagle</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,13 +16,13 @@
       <button class="menu__btn"><span class="visually-hidden">Меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link">О Бигль</a>
+          <a href="#" class="menu__link menu__link--active">О Бигль</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Велосипеды</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link menu__link--active">Мой Бигль</a>
+          <a href="#" class="menu__link">Мой Бигль</a>
         </li>
         <li class="menu__item">
           <a href="#" class="menu__link">Где купить</a>
@@ -34,109 +35,59 @@
   </header>
   
   <main>
-    <nav class="menu-local">
-      <ul class="menu__sublist">
-        <li class="menu__subitem">
-          <a href="#" class="menu__sublink">Трейд нн</a>
-        </li>
-        <li class="menu__subitem">
-          <a href="#" class="menu__sublink menu__sublink--active">Скачать инструкцию</a>
-        </li>
-        <li class="menu__subitem">
-          <a href="#" class="menu__sublink">Зарегистрировать Бигль</a>
-        </li>
-        <li class="menu__subitem">
-          <a href="#" class="menu__sublink">Faq</a>
-        </li>
-      </ul>
-    </nav>
-
-    <section class="about wrapper">
-      <div class="about__photo">
-        <div class="about__wrap">
-          <a href="#" class="about__back">Назад</a>
-          <h1>Beagle 320</h1>
-        </div>
-        <figure class="about__img">
-          <img src="img/img-3.jpg" alt="Beagle 320" width="875" height="525">
-        </figure>
-        <div class="about__type">
-          <button type="button" class="about__color about__color--active"></button>
-          <button type="button" class="about__color"></button>
-          <button type="button" class="about__color"></button>
-          <button type="button" class="about__color"></button>
-          <button type="button" class="about__color"></button>
-        </div>
+    <section class="register">
+      <div class="register__top">
+        <p class="wrapper">Здравствуйте, поздравляем! Здесь Вы можете зарезервировать велосипед</p>
       </div>
-      <div class="about__info">
-        <figure class="about__figure">
-          <img src="img/kids.jpg" alt="Beagle 320" width="527" height="339">
-        </figure>
-        <h3>Характеристики</h3>
-        <ul class="about__list">
-          <li class="about__item">
-            <img src="img/icon-weight.png" alt="Beagle 320" width="80" height="55">
-            <p>15 кг</p>
-          </li>
-          <li class="about__item">
-            <img src="img/icon-settings.png" alt="Beagle 320" width="58" height="59">
-            <p>3 передачи</p>
-          </li>
-          <li class="about__item">
-            <img src="img/icon-size.png" alt="Beagle 320" width="54" height="54">
-            <p>21’’</p>
-          </li>
-          <li class="about__item">
-            <img src="img/icon-height.png" alt="Beagle 320" width="67" height="57">
-            <p>115-135 см</p>
-          </li>
-        </ul>
-        <div class="about__price">
-          <a href="#" class="about__link">Оставить заявку</a>
-          <p>7500р</p>
-        </div>
+      <div class="wrapper">
+        <form action="#" method="post" class="form">
+          <div class="form__wrap">
+            <div class="form__field">
+              <div class="form__title">
+                <h1>Beagle</h1>
+                <span>/ Limited Edition (7)</span>
+              </div>
+              <span class="form__comment">Введите данные</span>
+              <input type="text" name="id" class="form__input" placeholder="ID">
+              <select name="model" id="model" class="form__select">
+                <option value="" disabled selected>Модель</option>
+                <option value="1">Модель 1</option>
+                <option value="2">Модель 2</option>
+              </select>
+              <select name="color" id="color" class="form__select">
+                <option value="" disabled selected>Color</option>
+                <option value="1">Color 1</option>
+                <option value="2">Color 2</option>
+              </select>
+              <input type="text" name="date" id="date" class="form__input form__input--date" placeholder="Data">
+              <select name="dealer" id="dealer" class="form__select">
+                <option value="" disabled selected>Dealer</option>
+                <option value="1">Dealer 1</option>
+                <option value="2">Dealer 2</option>
+              </select>
+              <fieldset class="form__validity">
+                <input type="text" name="name" id="name" class="form__input form__input--name" value="Ярослав" placeholder="Имя" required>
+                <label for="name" class="form__label-name"></label>
+              </fieldset>
+              <fieldset class="form__validity">
+                <input type="email" name="email" class="form__input form__input--email" value="Yaroslav@param//ru" placeholder="E-mail" required>
+                <label for="email" class="form__label-email"></label>
+              </fieldset>
+              <button type="submit" class="form__submit">Отправить</button>
+              <input type="checkbox" name="tick" id="tick" class="form__checkbox" checked>
+              <label for="tick" class="form__label">Принимаю <a href="#">условия</a> обработки личных данных</label>
+            </div>
+            <figure class="form__img">
+              <img src="img/dog-big.png" alt="User" width="434" height="476">
+            </figure>
+          </div>
+        </form>
       </div>
     </section>
     
-    <section class="album-internal">
-      <div class="wrapper">
-        <h2>Описание</h2>
-        <p>EUROBIKE 2015 GOLD AWARD WINNER<br>
-        Now in glorious technicolour! Cyan, Black and Red.</p>
-        <p>The Belter 20" Urban 3 gives your older child (6-9 years old) the range of a geared bike while still retaining the lightness and simplicity we are known for. Spec includes the SRAM iMotion 3 speed hub, Ritchey finishing kit, rigid fork, sealed bearings throughout and lightweight Maxxis DTH tyres resulting in a 3-speed bike only 300g over the same bike with a single speed.</p>
-        <p>The super-clean lines match the super clean, low maintenance belt drive train. The Urban 3 is more than just the ultimate 'ride to school' bike, the 3 speed hub gives you enough gear variance to tackle all but the toughest of hills or terrain.</p>
-        <p>Frame: 6061 Aluminium Narrow Gauge Tubing, V Mounts</p>
-        <p>Dropouts: Two Piece Forged Aluminium<br>
-        Fork: 6061 Aluminium Blade, Crown & Steerer, V Mounts<br>
-        Drivetrain: ER Aluminium 4-Arm Spider, Sprocket & Guard, Composite Belt Drive<br>
-        Pedals: Early Rider, Sealed Bearings<br>
-        Headset: 1 1/8” Sealed Cartridge A-Headset<br>
-        Stem: Ritchey 60mm, + 10 Degree, Aluminium<br>
-        Handlebar: Ritchey 22.2mm, Flat Bar, 500mm, 6°<br>
-        Grips: Early Rider Wing With Grip-Shift<br>
-        Tyres: Maxxis Torch 20” X 1.5”<br>
-        Rims: Front: 20” 24h Single Wall Alloy Rear: 20” 28h Single Wall Alloy<br>
-        Hubs: Front: Aluminium, Sealed Bearings Rear: Sram I-Motion 3<br>
-        Spokes: Black, Silver Nipples<br>
-        Seatpost: Ritchey Alloy Micro-Adjust<br>
-        Saddle: Early Rider<br>
-        Brakes: Tektro Bx-1 & Short Reach Levers<br>
-        Finish: Hand Brushed, Clear Coated<br>
-        Weight: 7.4 Kgs<br>
-        Warranty: 1 Year<br>
-        GEOMETRY </p>
-        <p>Frame Size: 20”<br>
-        Head Angle: 69.5°<br>
-        Seat Angle: 73°<br>
-        Reach: 45cm<br>
-        Standover Height: 56cm<br>
-        Maximum Seat Height: 65cm<br>
-        Wheelbase: 79.8cm<br>
-        Recommend Age: 6 - 9 Years Old</p>
-      </div>
-      <figure class="album__divider">
-        <img src="img/dog.png" alt="Beagle" width="100" height="116">
-      </figure>
+    <section class="why wrapper">
+      <h2><span>Зачем</span> нужна регистрация</h2>
+      <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class</p>
       <a href="#" class="album__btn">Перейти в каталог</a>
     </section>
     
@@ -222,5 +173,12 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Calender -->
+  <script>
+    $(function() {
+      $("#date").datepicker();
+    });
+  </script>
 </body>
 </html>
