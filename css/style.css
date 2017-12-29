@@ -3269,6 +3269,7 @@ a.sp-video:after {
   margin-bottom: 25px;
   font-size: 30px;
   font-weight: 400;
+  line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -3315,6 +3316,8 @@ a.sp-video:after {
 }
 .model__photo {
   position: relative;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 .model__arrow {
   position: absolute;
@@ -3621,6 +3624,16 @@ a.sp-video:after {
   .map__label{
     width: 350px;
   }
+  .model__arrow{
+    width: 50px;
+    height: 50px;
+  }
+  .model__arrow--left{
+    left: -10px;
+  }
+  .model__arrow--right{
+    right: -10px;
+  }
 }
 @media (max-width: 1279px){
   .wrapper{
@@ -3771,6 +3784,30 @@ a.sp-video:after {
   .dealer__info p{
     margin-right: 50px;
   }
+  .model__wrap{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start;
+  }
+  .model__photo{
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .model__box{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .model__box--frame{
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .model__box--fork{
+    -ms-flex-order: 3;
+        order: 3;
+  }
 }
 @media (max-width: 1022px){
   .wrapper{
@@ -3903,6 +3940,18 @@ a.sp-video:after {
   .map__btn img{
     width: 40px;
     height: auto;
+  }
+  .model__btn{
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .info__wrap{
+    padding-top: 0;
+    display: block;
+  }
+  .info__column{
+    width: 100%;
+    padding: 0;
   }
 }
 @media (max-width: 766px){
@@ -4141,5 +4190,25 @@ a.sp-video:after {
   }
   .map__btn img{
     width: 30px;
+  }
+  .model__arrow{
+    width: 20px;
+    height: 20px;
+  }
+  .model__photo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .model__btn{
+    width: 100%;
+  }
+  .info h3{
+    font-size: 20px;
+  }
+  .model{
+    padding-top: 40px;
+  }
+  .model__select{
+    margin-bottom: 20px;
   }
 }
