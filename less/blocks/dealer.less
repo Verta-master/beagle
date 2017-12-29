@@ -1,7 +1,10 @@
 .dealer {
   h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
     color: #4d4d4d;
+    letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
     position: relative;
@@ -9,7 +12,7 @@
     &::before {
       content: "+";
       position: absolute;
-      top: -5px;
+      top: -9px;
       left: -75px;
       display: flex;
       justify-content: center;
@@ -25,6 +28,7 @@
   }
   
   p {
+    margin: 0;
     font-size: 14px;
     color: #4d4d4d;
     letter-spacing: 1px;
@@ -38,8 +42,8 @@
 }
 
 .dealer__item {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -56,12 +60,12 @@
   p {
     max-width: 750px;
     margin-left: 0;
-    margin-right: 160px;
+    margin-right: 170px;
   }
 }
 
 .dealer__wrap {
-  padding-left: 130px;
+  padding-left: 150px;
 }
 
 .dealer__logo {
@@ -73,4 +77,9 @@
   .dealer__logo {
     display: none;
   }
+}
+
+.dealer__list {
+  padding-top: 20px;
+  margin-bottom: 110px;
 }
