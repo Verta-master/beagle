@@ -52,3 +52,220 @@
     transition: ease-out 0.2s;
   }
 }
+
+.catalog {
+  &::after {
+    display: none;
+  }
+}
+
+.calc {
+  width: 260px;
+  margin-top: 0;
+  
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #6e6e6e;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  
+  .calc__label,
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6e6e6e;
+    text-align: left;
+  }
+}
+
+.calc__field {
+  border: none;
+  padding: 0;
+  border-top: 1px solid rgb(216, 216, 216);
+  text-align: left;
+  position: relative;
+  
+  &:last-of-type {
+    border-bottom: 1px solid rgb(216, 216, 216);
+  }
+}
+
+.calc__select {
+  width: 98px;
+  height: 34px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #6e6e6e;
+  padding-left: 30px;
+  background-color: #f3f5f5;
+  border: 1px solid rgb(209, 209, 209);
+}
+
+.calc__submit {
+  margin: 20px 0;
+  color: #646464;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.calc__radio {
+  display: none;
+}
+
+.calc__label--newby,
+.calc__label--profy {
+  opacity: 0.1;
+  cursor: pointer;
+  margin-right: 15px;
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.calc__label--newby {
+  &::after {
+    content: "Новичок";
+  }
+}
+
+.calc__label--profy {
+  &::after {
+    content: "Профи";
+  }
+}
+
+#profy:checked + label,
+#newby:checked + label {
+  opacity: 1;
+  
+  &::after {
+    display: block;
+  }
+}
+
+.calc__label--small,
+.calc__label--medium,
+.calc__label--large {
+  margin-right: 20px;
+  opacity: 0.2;
+  cursor: pointer;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.2;
+  }
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.calc__label--small {
+  margin-left: 25px;
+  
+  &::before {
+    width: 44px;
+    top: 65px;
+  }
+  
+  &::after {
+    content: "Маленький";
+  }
+}
+
+.calc__label--medium {
+  &::before {
+    width: 87px;
+    top: 50px;
+  }
+  
+  &::after {
+    content: "Средний";
+  }
+}
+
+.calc__label--large {
+  &::before {
+    width: 141px;
+    top: 40px;
+  }
+  
+  &::after {
+    content: "Высокий";
+  }
+}
+
+#small:checked + label,
+#medium:checked + label,
+#large:checked + label {
+  opacity: 1;
+  
+  &::after {
+    display: block;
+  }
+  
+  &::before {
+    opacity: 1;
+  }
+}
+
+.calc__btn {
+  top: 50%;
+  min-height: 26px;
+  padding-left: 20px;
+  color: #000;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 16px;
+  background-image: url(../img/icon-arrow-left.png);
+  background-repeat: no-repeat;
+  background-size: 15px 26px;
+  background-position: left center;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.catalog::before {
+  top: 195px;
+  height: 505px;
+  background-image: linear-gradient(to bottom, #969696 0, #969696 7px, #f3f5f5 7px, #f3f5f5 100%);
+}

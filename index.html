@@ -56,13 +56,45 @@
       <h2>Каталог</h2>
       <div class="catalog__wrap wrapper">
         <div class="calc">
-          <h3>Калькулятор возраста</h3>
+          <h3>Найдите правильный велосипед:</h3>
           <form action="#" method="get" class="calc__form">
             <button type="button" class="calc__btn">Свернуть</button>
-            <button type="button" name="decrease" class="calc__arrow calc__arrow--prev"></button>
-            <input type="text" name="age" class="calc__input" value="8">
-            <button type="button" name="increase" class="calc__arrow calc__arrow--next"></button>
-            <button type="submit" class="calc__submit">Поехали!</button>
+            <fieldset class="calc__field">
+              <h4>Возраст</h4>
+              <select name="age" id="age" class="calc__select">
+                <option value="10">10</option>
+                <option value="14" selected>14</option>
+                <option value="20">20</option>
+              </select>
+              <label for="age" class="calc__label">Лет</label>
+            </fieldset>
+            <fieldset class="calc__field">
+              <h4>Рост</h4>
+              <input type="radio" name="height" id="small" class="calc__radio">
+              <label for="small" class="calc__label calc__label--small">
+                <img src="img/icon-person.png" alt="small" width="16" height="36">
+              </label>
+              <input type="radio" name="height" id="medium" class="calc__radio" checked>
+              <label for="medium" class="calc__label calc__label--medium">
+                <img src="img/icon-person.png" alt="medium" width="21" height="47">
+              </label>
+              <input type="radio" name="height" id="large" class="calc__radio">
+              <label for="large" class="calc__label calc__label--large">
+                <img src="img/icon-person.png" alt="large" width="26" height="61">
+              </label>
+            </fieldset>
+            <fieldset class="calc__field">
+              <h4>Навыки?</h4>
+              <input type="radio" name="skills" id="newby" class="calc__radio" checked>
+              <label for="newby" class="calc__label calc__label--newby">
+                <img src="img/icon-tricycle.png" alt="newby" width="28" height="24">
+              </label>
+              <input type="radio" name="skills" id="profy" class="calc__radio">
+              <label for="profy" class="calc__label calc__label--profy">
+                <img src="img/icon-bicycle.png" alt="profy" width="66" height="43">
+              </label>
+            </fieldset>
+            <button type="submit" class="calc__submit">Применить фильтр</button>
           </form>
         </div>
         <ul class="catalog__list">
