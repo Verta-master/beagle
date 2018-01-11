@@ -1,0 +1,31 @@
+.menu__sublist {
+  display: none;
+}
+
+.menu__link {
+  line-height: 70px;
+}
+
+.menu__item:nth-child(3):hover .menu__sublist {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 101px;
+  margin-top: 0;
+}
+
+.about {
+  margin-top: 150px;
+}
+
+@media (max-width: 1279px) {
+  .menu__item:nth-child(3):hover .menu__sublist,
+  .menu__sublist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: static;
+    margin-top: 0;
+  }
+}
