@@ -3603,6 +3603,24 @@ a.sp-video:after {
 .model__list li:active span {
   display: block;
 }
+.menu__sublist {
+  display: none;
+}
+.menu__link {
+  line-height: 70px;
+}
+.menu__item:nth-child(3):hover .menu__sublist {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 101px;
+  margin-top: 0;
+}
+.about {
+  margin-top: 150px;
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px){
   .sp-button{
     width: 14px;
@@ -3996,6 +4014,17 @@ a.sp-video:after {
   .model__box--fork{
     -ms-flex-order: 3;
         order: 3;
+  }
+  .menu__item:nth-child(3):hover .menu__sublist,
+  .menu__sublist{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    position: static;
+    margin-top: 0;
   }
 }
 @media (max-width: 1022px){
